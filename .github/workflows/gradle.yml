@@ -12,5 +12,5 @@ jobs: # какие задачи делаем
         uses: actions/setup-java@v1 # устанавливаем JDK
         with:
           java-version: 11 # версия для установки
-      - name: Build with Maven
-        run: mvn -B -e verify # запускаем Maven
+      - name: Build with Gradle
+        run: ./gradlew build # запускаем Maven
